@@ -17,8 +17,8 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="img/logo.png" alt="穂高牧場ロゴ" class="img-fluid">
                 </a>
-                <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <!-- 修正: data-bs-toggle と data-bs-target を追加 -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -40,6 +40,7 @@
             </div>
         </nav>
     </header>
+    
 
     <main class="mt-5">
         <section class="hero">
