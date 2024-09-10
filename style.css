@@ -14,6 +14,7 @@ body {
 
 /* header */
 header {
+    margin: 0;
     background-color: var(--accent-color1);
     padding: 1rem;
     position: fixed;
@@ -47,21 +48,19 @@ header {
 
 /* heroセクション */
 
-
 .hero {
     position: relative;
     text-align: center;
     color: white;
-    margin-top: 100px;
     /* ヘッダーの高さ分だけマージンを追加 */
     /* width: 100%; */
 }
 
 .hero-image img {
-    width: 100%;
-    /* height: 100%; */
-    /* object-fit: cover; */
-}
+    width: 100%; /* 横幅を画面幅に合わせる */
+    height: 100vh; /* 高さを画面の縦幅に合わせる */
+    object-fit: cover; /* アスペクト比を維持したまま、画像をコンテナいっぱいに表示 */
+  }
 
 .hero-content {
     position: absolute;
