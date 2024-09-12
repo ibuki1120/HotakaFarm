@@ -57,10 +57,13 @@ header {
 }
 
 .hero-image img {
-    width: 100%; /* 横幅を画面幅に合わせる */
-    height: 100vh; /* 高さを画面の縦幅に合わせる */
-    object-fit: cover; /* アスペクト比を維持したまま、画像をコンテナいっぱいに表示 */
-  }
+    width: 100%;
+    /* 横幅を画面幅に合わせる */
+    height: 100vh;
+    /* 高さを画面の縦幅に合わせる */
+    object-fit: cover;
+    /* アスペクト比を維持したまま、画像をコンテナいっぱいに表示 */
+}
 
 .hero-content {
     position: absolute;
@@ -114,20 +117,29 @@ header {
     margin-bottom: 10px;
 }
 
-/* お客様の声セクション */
-.customer-reviews {
-    text-align: center;
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #50C878;
+    /* ボタンの色を指定 */
+    width: 50px;
+    height: 100px;
 }
 
-.review {
-    margin-bottom: 20px;
-}
 
+
+
+
+
+
+
+
+
+/* footer */
 /* 店舗情報セクション */
 #shop-info {
     padding: 50px 0;
     background-color: #333;
-    /* 例: 濃い灰色 */
     color: white;
 }
 
@@ -137,6 +149,31 @@ header {
 
 .shop-details h3 {
     margin-bottom: 10px;
+}
+
+.shop-details table {
+    /* テーブル全体のスタイル */
+    width: 100%;
+    border-collapse: collapse;
+    /* セルの境界線を結合 */
+}
+
+.shop-details th,
+.shop-details td {
+    /* テーブルのセルスタイル */
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* セルの境界線 */
+    text-align: left;
+    /* 文字を左寄せ */
+}
+
+.shop-details th {
+    /* テーブルの見出しスタイル */
+    background-color: var(--accent-color1);
+    /* アクセントカラー1を背景に */
+    color: white;
+    font-weight: bold;
 }
 
 .google-map {
@@ -154,9 +191,26 @@ header {
     height: 100%;
 }
 
-/* レスポンシブ対応 */
+/* 画像の高さを制限しつつ、縮尺を維持する */
+.carousel-item img {
+    max-height: 70vh;
+    /* 画像の最大高さを設定 */
+    object-fit: contain;
+    /* 縦横比を維持して全体を表示 */
+    width: 100%;
+    /* 幅を100%に設定 */
+}
+
+
+/* スマートフォン対応 */
 @media (max-width: 768px) {
-    .hero-title {
-        font-size: 1.8rem;
+    
+    .carousel-item img {
+        max-height: 300px;
+        /* モバイル向けに高さを制限 */
+    }
+    .shop-details,
+    .google-map {
+        width: 100%;
     }
 }

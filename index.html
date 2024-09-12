@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -50,7 +51,7 @@
         <section class="hero">
             <div class="container-fluid p-0">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 p-0">
                         <div class="hero-image">
                             <img src="img/hero-image1.jpg" alt="炭火焼肉 穂高牧場の焼肉盛り合わせ" class="img-fluid">
                         </div>
@@ -69,8 +70,6 @@
 
         <section id="about">
             <div class="container">
-
-
                 <h2 class="mb-5 display-3 border-bottom border-3 border-dark">穂高牧場の魅力</h2>
 
                 <!-- 1. サガリ -->
@@ -152,6 +151,8 @@
             </div>
 
         </section>
+
+
 
         <section class="faq py-5">
             <div class="container">
@@ -235,180 +236,114 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
 
         <section id="menu">
-            <section id="menu-list">
-                <div class="container">
-                    <h2 class="mb-5 display-3 border-bottom border-3 border-dark">宴会プラン</h2>
-                    <div class="row features">
-                        <div class="col-md-6 feature">
-                            <img src="img/enkai.png" alt="宴会メニューの画像" class="img-fluid w-100">
-                        </div>
-                        <div class="col-md-6 feature d-flex align-items-center">
-                            <div>
-                                <h3>本場焼肉店の宴会プラン♪</h3>
-                                <p class="text-start"><br>90分飲み放題付きです♪<br>ご予約は4人以上から承っております</p>
-                            </div>
-                        </div>
+            <div class="container">
+                <h2 class="mb-5 display-3 border-bottom border-3 border-dark">メニュー Menu</h2>
+                <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true"
+                    data-bs-interval="3000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="7"
+                            aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="8"
+                            aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="9"
+                            aria-label="Slide 10"></button>
                     </div>
-                    
-                    <h2 class="mb-5 display-3 border-bottom border-3 border-dark">メニュー Menu</h2>
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <h3 class="menu-category my-3">盛り合わせ</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h4>特選盛</h4>
-                                    <p>6,248円（税込）<br>ステーキが入ってドーンと1kg!</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h4>牛肉盛り合わせ</h4>
-                                    <p>4,378円（税込）</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h4>牧場5種盛</h4>
-                                    <p>3,938円（税込）<br>2～3名様</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h4>ホルモンごちゃまぜ盛り</h4>
-                                    <p>1,078円（税込）</p>
-                                </li>
-                            </ul>
+                    <div class="carousel-inner pb-5">
+                        <div class="carousel-item active">
+                            <img src="img/menu_01.jpg" class="d-block " alt="メニュー1: 焼き鳥">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="img/menu_02.jpg" class="d-block " alt="メニュー2: 焼き鳥">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/menu_03.jpg" class="d-block " alt="メニュー3: 焼き鳥">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/menu_04.jpg" class="d-block " alt="メニュー3: 焼き鳥">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/menu_05.jpg" class="d-block " alt="メニュー3: 焼き鳥">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/menu_06.jpg" class="d-block " alt="メニュー3: 焼き鳥">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/menu_07.jpg" class="d-block " alt="メニュー3: 焼き鳥">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/menu_08.jpg" class="d-block " alt="メニュー3: 焼き鳥">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/menu_09.jpg" class="d-block " alt="メニュー3: 焼き鳥">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/menu_10.jpg" class="d-block " alt="メニュー3: 焼き鳥">
                         </div>
 
-                        <div class="col-md-4 mb-4">
-                            <h3 class="menu-category my-3">牛肉</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h4>北見で一番旨いサガリ</h4>
-                                    <p>660円（税込）<br>※ドリンクをご注文の方に限りのお値段です</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h4>サガリ</h4>
-                                    <p>1,078円（税込）</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h4>上サガリ</h4>
-                                    <p>1,298円（税込）</p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <h3 class="menu-category my-3">豚</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h4>豚サガリ</h4>
-                                    <p>638円（税込）</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h4>豚カルビ</h4>
-                                    <p>638円（税込）</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h4>トントロ</h4>
-                                    <p>638円（税込）</p>
-                                </li>
-                            </ul>
-                        </div>
+                        <!-- 他のスライドも同様に修正 -->
                     </div>
-
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <h3 class="menu-category my-3">鶏</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h4>鶏せせり</h4>
-                                    <p>528円（税込）</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h4>鶏もも</h4>
-                                    <p>528円（税込）</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h4>つくね(2本)</h4>
-                                    <p>418円（税込）</p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <h3 class="menu-category my-3">ホルモン</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h4>上ミノ</h4>
-                                    <p>1,078円（税込）</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h4>牛レバー</h4>
-                                    <p>528円（税込）</p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <h3 class="menu-category my-3">羊</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h4>味付ジンギスカン</h4>
-                                    <p>792円（税込）</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <h3 class="menu-category my-3">サラダ</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h4>シーザーサラダ</h4>
-                                    <p>748円（税込）</p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <h3 class="menu-category my-3">スープ</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h4>玉子スープ</h4>
-                                    <p>418円（税込）</p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <h3 class="menu-category my-3">ご飯</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h4>ビビンバ</h4>
-                                    <p>680円</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <h3 class="menu-category my-3">デザート</h3>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h4>杏仁豆腐/牧場プリン</h4>
-                                    <p>200円</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
+                    <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            </section>
+            </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
     <footer id="shop-info">
@@ -416,29 +351,39 @@
             <h2 class="section-title mb-5">店舗情報</h2>
             <div class="row">
                 <div class="col-md-6 shop-details">
-                    <h3>住所</h3>
-                    <p>
-                        〒090-0801<br>
-                        北海道北見市春光町１丁目４９−４
-                    </p>
-                    <h3>電話番号</h3>
-                    <p> 0157-33-5733</p>
-                    <h3>営業時間</h3>
-                    <p>
-                        ディナー 17:00～22:00 (L.O. 21:30)
-                    </p>
-                    <h3>定休日</h3>
-                    <p>水曜日</p>
-                    <h3>駐車場</h3>
-                    <p>有り（無料）</p>
-                    <h3>アクセス</h3>
-                    <p>JR北見駅から徒歩15分</p>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>住所</th>
+                                <td>〒090-0801<br>北海道北見市春光町１丁目４９−４</td>
+                            </tr>
+                            <tr>
+                                <th>電話番号</th>
+                                <td>0157-33-5733</td>
+                            </tr>
+                            <tr>
+                                <th>営業時間</th>
+                                <td>ディナー 17:00～22:00<br> (L.O. 21:30)</td>
+                            </tr>
+                            <tr>
+                                <th>定休日</th>
+                                <td>?曜日</td>
+                            </tr>
+                            <tr>
+                                <th>駐車場</th>
+                                <td>有り（無料）</td>
+                            </tr>
+                            <tr>
+                                <th>アクセス</th>
+                                <td>JR北見駅から徒歩15分<br>JR柏陽駅から徒歩5分</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="col-md-6 google-map">
                     <div class="google-map-container">
-                        <iframe
-                            src="https://maps.google.co.jp/maps?output=embed&q=北海道北見市 穂高牧場"
-                            width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+                        <iframe src="https://maps.google.co.jp/maps?output=embed&q=北海道北見市 穂高牧場" width="100%"
+                            height="450px" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
