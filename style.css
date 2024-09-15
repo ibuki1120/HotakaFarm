@@ -127,8 +127,15 @@ header {
 }
 
 
+.btn {
+    background-color: var(--accent-color2);
+    color: white;
+}
 
-
+.btn:hover {
+    background-color: #3e8e68;
+    color: white;
+}
 
 
 
@@ -206,7 +213,7 @@ header {
 @media (max-width: 768px) {
     
     .carousel-item img {
-        max-height: 300px;
+        max-height: 500px;
         /* モバイル向けに高さを制限 */
     }
     .shop-details,
